@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #211c1c; /* Black background */
+    color: rgb(214, 193, 193); /* White text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Company Name */
+.company-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    background-color: #fff;
+    color: #333;
+}
+
+.search-bar:focus {
+    outline: none;
+    border: 2px solid #04AA6D;
+}
+
+/* Cart Section */
+.cart-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #555;
+}
+
+.cart-item-img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Price and Quantity Controls */
+.price {
+    font-size: 1.2rem;
+    color: #04AA6D;
+    margin-top: 10px;
+}
+
+.quantity-control {
+    margin-top: 10px;
+}
+
+.quantity-btn {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-btn:hover {
+    background-color: #0056b3;
+}
+
+.quantity-input {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+/* Remove Button */
+.remove-btn {
+    margin-top: 10px;
+}
+
+/* Total Price Section */
+.total-price {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.checkout-container {
+    margin-top: 30px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .cart-item-img {
+        max-width: 100%;
+    }
+
+    .cart-item-details {
+        text-align: center;
+    }
+}

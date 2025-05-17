@@ -1,0 +1,159 @@
+/* Global font settings */
+body {
+    font-family: 'Arial'; /* Change font to Arial */
+    background-color: #3a3636; /* Set background color to black */
+    color: #d86363; /* Set text color to white */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333; /* Dark background for header */
+    color: white;
+}
+
+/* Company name styling */
+.company-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Search bar container */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+/* Search bar styling */
+.search-bar {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Ensure the background image fits the full screen */
+.itempage {
+    background-image: url('../Img/itembg.jpg');  /* Your image path */
+    background-repeat: no-repeat;
+    background-position: center center;  /* Keep the image centered */
+    background-size: cover;  /* Cover the entire screen */
+     /* Full width of the page */
+    padding: 0;  /* Remove any extra padding */
+  }
+
+/* Item details styling */
+.item-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:#000; /* Set text color to white */
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.item-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #fff; /* Set text color to white */
+}
+
+/* Quantity input field */
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Add to Cart Button */
+.btn {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+/* Item image styling */
+img {
+    max-width: 80%; /* Medium size for the image */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .item-name {
+        font-size: 1.5rem;
+    }
+    .price {
+        font-size: 1.2rem;
+    }
+    .item-description {
+        font-size: 1rem;
+    }
+    .quantity-input {
+        width: 50px;
+    }
+
+    /* Make the image smaller on smaller screens */
+    .container img {
+        max-width: 70%;
+    }
+    
+    .container {
+        align-items: center;
+    }
+
+    /* Stack content vertically on small screens */
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Adjust the layout of buttons and quantity inputs */
+    .quantity-control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%; /* Make the button full-width on small screens */
+        font-size: 1px;
+        padding: 10px 20px;
+    }
+}

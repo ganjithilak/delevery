@@ -1,0 +1,97 @@
+/* Basic reset for margin and padding */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('../Img/Pizza-Background.webp'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the entire body */
+  background-position: center; /* Center the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Login form container */
+.login-form {
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for background */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 400px; /* Maximum width for form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+}
+
+/* Form inputs */
+.input-field {
+  margin-bottom: 15px;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-field input:focus {
+  border-color: #04AA6D; /* Focus color */
+  outline: none;
+  background-color: #f9f9f9;
+}
+
+/* Button styling */
+.submit-btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #039c5b;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #d7b3b3;
+  color: white;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* Link styling */
+a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.login-form{
+  position: relative;
+  left: 70px;
+}

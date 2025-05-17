@@ -1,0 +1,211 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure the background image fits the full screen */
+.menupage {
+  background-image: url('../Img/menubagimage.avif');  /* Your image path */
+  background-repeat: no-repeat;
+  background-position: center center;  /* Keep the image centered */
+  background-size: cover;  /* Cover the entire screen */
+   /* Full width of the page */
+  padding: 0;  /* Remove any extra padding */
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background for the header */
+  color: white;
+  z-index: 10;
+}
+
+/* Company name styling */
+.company-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav-item{
+  background-color: #a2a6ab;
+  
+
+}
+/* Search bar container */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* Search bar styling */
+.search-bar {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Search bar focus effect */
+.search-bar:focus {
+  outline: none;
+  border: 2px solid #04AA6D;
+}
+
+/* Pizza Love Section */
+.pizza-love {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Pizza Categories Section */
+.indextab2 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 15px;
+
+}
+
+/* Pizza Menu Section */
+.indextab2img {
+  display: flex;
+  
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  flex-wrap: wrap;  /* Allow the items to wrap on smaller screens */
+  margin: 0 auto;
+  max-width: 1500px;  /* Control the maximum width of the items */
+}
+
+/* Pizza Item Styling */
+.pizza-item {
+  text-align: center;
+
+  padding: 20px;
+  
+  margin: 10px;
+}
+
+.pizza-item img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+
+}
+
+.pizza-item p {
+  font-size: 1rem;
+  margin-top: 10px;
+  font-weight: bold;
+
+}
+
+/* Order Button Styling */
+.order-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.order-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 0; /* Ensure no margin between footer and content above */
+  padding: 10px 0; /* Adjust padding to ensure proper footer spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pizza-item {
+    width: 45%; /* Increase the width on smaller screens */
+  }
+
+  .indextab2img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-name {
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.headong1{
+  color: white; 
+}
+.indextab2img{
+  color: white; 
+}
+.text-center{
+  padding-bottom: 20px;
+}
+.loginbtn{
+  background-color:#fff;
+  position: relative;
+  border-radius: 20px;
+   height: 35px;
+    width: 115px;
+ font-family: "Roboto";
+}
+
+
+/* add to cart button*/
+
+.btn-add-to-cart {
+  background-color: #007bff;       /* Bootstrap Primary Blue */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.btn-add-to-cart:hover {
+  background-color: #0069d9;
+  transform: translateY(-2px);
+}
+
+.btn-add-to-cart:active {
+  background-color: #005cbf;
+  transform: scale(0.97);
+}

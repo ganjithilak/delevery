@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial;
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.company-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    background-color: #fff;
+    color: #333;
+}
+
+.search-bar:focus {
+    outline: none;
+    border: 2px solid #04AA6D;
+}
+
+/* Checkout Page */
+.container {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f0e9e9;
+}
+
+/* Order Summary */
+.order-summary {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #555;
+}
+
+.order-item {
+    margin-bottom: 15px;
+}
+
+/* Total Price */
+.total-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #04AA6D;
+}
+
+/* Delivery Form */
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #555;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .company-name {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .order-summary, .form-control, .form-select, .btn {
+        width: 100%;
+    }
+
+    .order-item {
+        font-size: 1rem;
+    }
+
+    .total-price {
+        font-size: 1rem;
+    }
+}

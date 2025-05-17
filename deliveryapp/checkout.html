@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Taste Triangle</title>
+  <link rel="stylesheet" href="CSS/landingpage.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header bg-dark p-3 d-flex justify-content-between align-items-center">
+    <h1 class="company-name m-0">Taste Triangle</h1>
+    <a  href="login.html">
+      <button class="loginbtn">Log In</button>
+    </a>
+  </div>
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Taste Triangle</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse show" id="navbarBasic">
+        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Landingpage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="delivery.html">Cart</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Checkout Content -->
+  <div class="container mt-5">
+    <h2 class="mb-4">Checkout</h2>
+    <div class="row g-5">
+
+      <!-- Order Summary -->
+      <div class="col-md-6">
+        <h4>Order Summary</h4>
+        <div class="border p-3 rounded bg-light">
+          <p><strong>Ham Pizza</strong> - $12.99 x 1</p>
+          <p><strong>Margarita Pizza</strong> - $10.99 x 1</p>
+          <hr />
+          <p class="fw-bold">Total: <span id="total-price">$23.98</span></p>
+        </div>
+      </div>
+
+      <!-- Delivery Form -->
+      <div class="col-md-6">
+        <h4>Delivery Details</h4>
+        <form id="checkoutForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="contact" class="form-label">Contact Number</label>
+            <input type="text" class="form-control" id="contact" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="address" class="form-label">Delivery Address</label>
+            <textarea class="form-control" id="address" rows="3" required></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="delivery" class="form-label">Delivery Option</label>
+            <select class="form-select" id="delivery" required>
+              <option value="standard">Standard Delivery (Free)</option>
+              <option value="express">Express Delivery ($5.00)</option>
+              <option value="eco">Eco-Friendly Delivery ($3.00)</option>
+            </select>
+          </div>
+
+          <div class="mb-4">
+            <label for="payment" class="form-label">Payment Option</label>
+            <select class="form-select" id="payment" required>
+              <option value="credit-card">Credit Card</option>
+              <option value="paypal">PayPal</option>
+            </select>
+          </div>
+
+          <!-- Trigger Modal Instead of Submit -->
+          <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#orderModal">
+            Complete Order
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Confirmation Modal -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-success">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="orderModalLabel">🎉 Order Placed!</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center fs-5">
+          ✅ Thank you! Your order has been placed successfully.
+        </div>
+        <div class="modal-footer justify-content-center">
+          <a href="Landingpage.html" class="btn btn-success">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center mt-5 py-3 bg-dark text-white">
+    &copy; 2024 Taste Triangle. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
